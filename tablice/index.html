@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Wyszukaj.." title="szukaj">
+<ul id="myUL">
+  <li><b><a href="#">B podlaskie</a></b></li>
+  <li><a href="#">BI Bia≥ystok</a></li>
+  <li><a href="#">BS Suwa≥ki</a></li>
+
+  <li><a href="#">BL £omøa</a></li>
+  <li><a href="#">BAU powiat augustowski</a></li>
+
+  <li><a href="#">BIA powiat bia≥ostocki</a></li>
+  <li><a href="#">BBI powiat bielski</a></li>
+  <li><a href="#">BGR powiat grajewski</a></li>
+  <li><a href="#">BHA powiat hajnowski</a></li>
+  <li><a href="#">BKL powiat kolneÒski</a></li>
+  <li><a href="#">BMN powiat moniecki</a></li>
+  <li><a href="#">BSE powiat sejneÒski</a></li>
+  <li><a href="#">BKL powiat kolneÒski</a></li>
+  <li><a href="#">BSI powiat siemiatycki</a></li>
+  <li><a href="#">BSK powiat sokÛlski</a></li>
+  <li><a href="#">BSU powiat suwalski</a></li>
+  <li><a href="#">BWM powiat wysokomazowiecki</a></li>
+  <li><a href="#">BZA powiat zambrowski</a></li>
+  <li><a href="#">BLM powiat ≥omøyÒski</a></li>
+  <li><b><a href="#">C kujawsko-pomorskie</a></b></li>
+  <li><a href="#">CB Bydgoszcz</a></li>
+  <li><a href="#">CG Grudziπdz</a></li>
+
+  <li><a href="#">CT ToruÒ</a></li>
+  <li><a href="#">CW W≥oc≥awek</a></li>
+
+  <li><a href="#">CAL powiat aleksandrowski</a></li>
+  <li><a href="#">CBR powiat brodnicki</a></li>
+  <li><a href="#">CBY powiat bydgoski</a></li>
+  <li><a href="#">CCH powiat che≥miÒski</a></li>
+  <li><a href="#">CGD powiat golubsko-dobrzyÒski</a></li>
+  <li><a href="#">CGR powiat grudziπdzki</a></li>
+  <li><a href="#">CIN powiat inowroc≥awski</a></li>
+  <li><a href="#">CLI powiat lipnowski</a></li>
+  <li><a href="#">CMG powiat mogileÒski</a></li>
+  <li><a href="#">CNA powiat nakielski</a></li>
+  <li><a href="#">CRA powiat radziejowski</a></li>
+  <li><a href="#">CRY powiat rypiÒski</a></li>
+  <li><a href="#">CSE powiat sÍpoleÒski</a></li>
+  <li><a href="#">CSW powiat úwiecki</a></li>
+  <li><a href="#">CTR powiat toruÒski</a></li>
+  <li><a href="#">CTU powiat tucholski</a></li>
+  <li><a href="#">CWA powiat wπbrzeski</a></li>
+  <li><a href="#">CWL powiat w≥oc≥awski</a></li>
+  <li><a href="#">CZN powiat øniÒski</a></li>
+  <li><b><a href="#">D dolnoúlπskie</a></b></li>
+  <li><a href="#">DJ Jelenia GÛra</a></li>
+  <li><a href="#">DL Legnica</a></li>
+
+  <li><a href="#">DB Wa≥brzych</a></li>
+  <li><a href="#">DW Wroc≥aw</a></li>
+
+  <li><a href="#">DBL powiat boles≥awiecki</a></li>
+  <li><a href="#">DDZ powiat dzierøoniowski</a></li>
+  <li><a href="#">DGR powiat gÛrowski</a></li>
+  <li><a href="#">DGL powiat g≥ogowski</a></li>
+  <li><a href="#">DJA powiat jaworski</a></li>
+  <li><a href="#">DJE powiat jeleniogÛrski</a></li>
+  <li><a href="#">DKA powiat kamiennogÛrski</a></li>
+  <li><a href="#">DKL powiat k≥odzki</a></li>
+  <li><a href="#">DLE powiat legnicki</a></li>
+  <li><a href="#">DLB powiat lubaÒski</a></li>
+  <li><a href="#">DLU powiat lubiÒski</a></li>
+  <li><a href="#">DLW powiat lwÛwecki</a></li>
+  <li><a href="#">DMI powiat milicki</a></li>
+  <li><a href="#">DOL powiat oleúnicki</a></li>
+  <li><a href="#">DOA powiat o≥awski</a></li>
+  <li><a href="#">DPL powiat polkowicki</a></li>
+  <li><a href="#">DSR powiat úredzki</a></li>
+  <li><a href="#">DST powiat strzeliÒski</a></li>
+  <li><a href="#">DSW powiat úwidnicki</a></li>
+  <li><a href="#">DTR powiat trzebnicki</a></li>
+  <li><a href="#">DBA powiat wa≥brzyski</a></li>
+  <li><a href="#">DWL powiat wo≥owski</a></li>
+  <li><a href="#">DWR powiat wroc≥awski</a></li>
+  <li><a href="#">DZA powiat zπbkowicki</a></li>
+  <li><a href="#">DZG powiat zgorzelecki</a></li>
+  <li><a href="#">DZL powiat z≥otoryjski</a></li>
+  <li><b><a href="#">E ≥Ûdzkie</a></b></li>
+  <li><a href="#">EP PiotrkÛw Trybunalski</a></li>
+  <li><a href="#">ES Skierniewice</a></li>
+
+  <li><a href="#">EL £Ûdü</a></li>
+  <li><a href="#">EBE powiat be≥chatowski</a></li>
+
+  <li><a href="#">EBR powiat brzeziÒski</a></li>
+  <li><a href="#">EKU powiat kutnowski</a></li>
+  <li><a href="#">EOP powiat opoczyÒski</a></li>
+  <li><a href="#">EPA powiat pabianicki</a></li>
+  <li><a href="#">EPJ powiat pajÍczaÒski</a></li>
+  <li><a href="#">EPI powiat piotrkowski</a></li>
+  <li><a href="#">EPD powiat poddÍbicki</a></li>
+  <li><a href="#">ERA powiat radomszczaÒski</a></li>
+  <li><a href="#">ERW powiat rawski</a></li>
+  <li><a href="#">ESI powiat sieradzki</a></li>
+  <li><a href="#">ESK powiat skierniewicki</a></li>
+  <li><a href="#">ETM powiat tomaszowski</a></li>
+  <li><a href="#">EWI powiat wieluÒski</a></li>
+  <li><a href="#">EWE powiat wieruszowski</a></li>
+  <li><a href="#">EZD powiat zduÒskowolski</a></li>
+  <li><a href="#">EZG powiat zgierski</a></li>
+  <li><a href="#">ELA powiat ≥aski</a></li>
+  <li><a href="#">ELE powiat ≥Íczycki</a></li>
+  <li><a href="#">ELW powiat ≥Ûdzki wschodni</a></li>
+  <li><a href="#">ELC powiat ≥owicki</a></li>
+  <li><b><a href="#">F lubuskie</a></b></li>
+  <li><a href="#">FG GorzÛw Wielkopolski</a></li>
+  <li><a href="#">FZ Zielona GÛra</a></li>
+
+  <li><a href="#">FGW powiat gorzowski</a></li>
+  <li><a href="#">FKR powiat kroúnieÒski</a></li>
+
+  <li><a href="#">FMI powiat miÍdzyrzecki</a></li>
+  <li><a href="#">FNW powiat nowosolski</a></li>
+  <li><a href="#">FSD powiat strzelecko-drezdenecki</a></li>
+  <li><a href="#">FSU powiat sulÍciÒski</a></li>
+  <li><a href="#">FSW powiat úwiebodziÒski</a></li>
+  <li><a href="#">FSL powiat s≥ubicki</a></li>
+  <li><a href="#">FWS powiat wschowski</a></li>
+  <li><a href="#">FZG powiat øagaÒski</a></li>
+  <li><a href="#">FZA powiat øarski</a></li>
+  <li><a href="#">FZI powiat zielonogÛrski</a></li>
+  <li><b><a href="#">G pomorskie</a></b></li>
+  <li><a href="#">GD GdaÒsk</a></li>
+  <li><a href="#">GA Gdynia</a></li>
+
+  <li><a href="#">GSP Sopot</a></li>
+  <li><a href="#">GS S≥upsk</a></li>
+
+  <li><a href="#">GBY powiat bytowski</a></li>
+  <li><a href="#">GCH powiat chojnicki</a></li>
+  <li><a href="#">GCZ powiat cz≥uchowski</a></li>
+  <li><a href="#">GDA powiat gdaÒski</a></li>
+  <li><a href="#">GKA powiat kartuski</a></li>
+  <li><a href="#">GKS powiat koúcierski</a></li>
+  <li><a href="#">GKW powiat kwidzyÒski</a></li>
+  <li><a href="#">GLE powiat lÍborski</a></li>
+  <li><a href="#">GMB powiat malborski</a></li>
+  <li><a href="#">GND powiat nowodworski</a></li>
+  <li><a href="#">GPU powiat pucki</a></li>
+  <li><a href="#">GST powiat starogardzki</a></li>
+  <li><a href="#">GSZ powiat sztumski</a></li>
+  <li><a href="#">GSL powiat s≥upski</a></li>
+  <li><a href="#">GTC powiat tczewski</a></li>
+  <li><a href="#">GWE powiat wejherowski</a></li>
+  <li><a href="#">GWO powiat wejherowski</a></li>
+  <li><b><a href="#">K ma≥opolskie</a></b></li>
+  <li><a href="#">KR KrakÛw</a></li>
+  <li><a href="#">KK KrakÛw</a></li>
+
+  <li><a href="#">KN Nowy Sπcz</a></li>
+  <li><a href="#">KT TarnÛw</a></li>
+
+  <li><a href="#">KBC powiat bocheÒski</a></li>
+  <li><a href="#">KBA powiat bocheÒski</a></li>
+  <li><a href="#">KBR powiat brzeski</a></li>
+  <li><a href="#">KCH powiat chrzanowski</a></li>
+  <li><a href="#">KDA powiat dπbrowski</a></li>
+  <li><a href="#">KGR powiat gorlicki</a></li>
+  <li><a href="#">KRA powiat krakowski</a></li>
+  <li><a href="#">KLI powiat limanowski</a></li>
+  <li><a href="#">KMI powiat miechowski</a></li>
+  <li><a href="#">KMY powiat myúlenicki</a></li>
+  <li><a href="#">KNS powiat nowosπdecki</a></li>
+  <li><a href="#">KNT powiat nowotarski</a></li>
+  <li><a href="#">KOL powiat olkuski</a></li>
+  <li><a href="#">KOS powiat oúwiÍcimski</a></li>
+  <li><a href="#">KPR powiat proszowicki</a></li>
+  <li><a href="#">KSU powiat suski</a></li>
+  <li><a href="#">KTA powiat tarnowski</a></li>
+  <li><a href="#">KTT powiat tatrzaÒski</a></li>
+  <li><a href="#">KWA powiat wadowicki</a></li>
+  <li><a href="#">KWI powiat wielicki</a></li>
+  <li><b><a href="#">L lubelskie</a></b></li>
+  <li><a href="#">LB Bia≥a Podlaska</a></li>
+  <li><a href="#">LC Che≥m</a></li>
+
+  <li><a href="#">LU Lublin</a></li>
+  <li><a href="#">LZ ZamoúÊ</a></li>
+
+  <li><a href="#">LBI powiat bialski</a></li>
+  <li><a href="#">LBL powiat bi≥gorajski</a></li>
+  <li><a href="#">LCH powiat che≥mski</a></li>
+  <li><a href="#">LHR powiat hrubieszowski</a></li>
+  <li><a href="#">LJA powiat janowski</a></li>
+  <li><a href="#">LKR powiat kraúnicki</a></li>
+  <li><a href="#">LKS powiat krasnostawski</a></li>
+  <li><a href="#">LLB powiat lubartowski</a></li>
+  <li><a href="#">LUB powiat lubelski</a></li>
+  <li><a href="#">LOP powiat opolski</a></li>
+  <li><a href="#">LPA powiat parczewski</a></li>
+  <li><a href="#">LPU powiat pu≥awski</a></li>
+  <li><a href="#">LRA powiat radzyÒski</a></li>
+  <li><a href="#">LRY powiat rycki</a></li>
+  <li><a href="#">LSW powiat úwidnicki</a></li>
+  <li><a href="#">LTM powiat tomaszowski</a></li>
+  <li><a href="#">LWL powiat w≥odawski</a></li>
+  <li><a href="#">LZA powiat zamojski</a></li>
+  <li><a href="#">LLE powiat ≥ÍczyÒski</a></li>
+  <li><a href="#">LLU powiat ≥ukowski</a></li>
+
+  <li><b><a href="#">N warmiÒsko-mazurskie</a></b></li>
+  <li><a href="#">NE Elblπg</a></li>
+  <li><a href="#">NO Olsztyn</a></li>
+
+  <li><a href="#">NBA powiat bartoszycki</a></li>
+  <li><a href="#">NBR powiat braniewski</a></li>
+
+  <li><a href="#">NDZ powiat dzia≥dowski</a></li>
+  <li><a href="#">NEB powiat elblπski</a></li>
+  <li><a href="#">NEL powiat e≥cki</a></li>
+  <li><a href="#">NGI powiat giøycki</a></li>
+  <li><a href="#">NGO powiat go≥dapski</a></li>
+  <li><a href="#">NIL powiat i≥awski</a></li>
+  <li><a href="#">NKE powiat kÍtrzyÒski</a></li>
+  <li><a href="#">NLI powiat lidzbarski</a></li>
+  <li><a href="#">NMR powiat mrπgowski</a></li>
+  <li><a href="#">NNI powiat nidzicki</a></li>
+  <li><a href="#">NNM powiat nowomiejski</a></li>
+  <li><a href="#">NOE powiat olecki</a></li>
+  <li><a href="#">NOL powiat olsztyÒski</a></li>
+  <li><a href="#">NOS powiat ostrÛdzki</a></li>
+  <li><a href="#">NPI powiat piski</a></li>
+  <li><a href="#">NSZ powiat szczycieÒski</a></li>
+  <li><a href="#">NWE powiat wÍgorzewski</a></li>
+  <li><b><a href="#">O opolskie</a></b></li>
+  <li><a href="#">OP Opole</a></li>
+  <li><a href="#">OB powiat brzeski</a></li>
+
+  <li><a href="#">OGL powiat g≥ubczycki</a></li>
+  <li><a href="#">OK powiat kÍdzierzyÒsko-kozielski</a></li>
+
+  <li><a href="#">OKL powiat kluczborski</a></li>
+  <li><a href="#">OKR powiat krapkowicki</a></li>
+  <li><a href="#">ONA powiat namys≥owski</a></li>
+  <li><a href="#">ONY powiat nyski</a></li>
+  <li><a href="#">OOL powiat oleski</a></li>
+  <li><a href="#">OPO powiat opolski</a></li>
+  <li><a href="#">OPR powiat prudnicki</a></li>
+  <li><a href="#">OST powiat strzelecki</a></li>
+  <li><b><a href="#">P wielkopolskie</a></b></li>
+  <li><a href="#">PK Kalisz</a></li>
+  <li><a href="#">PN Konin</a></li>
+
+  <li><a href="#">PL Leszno</a></li>
+  <li><a href="#">PO PoznaÒ</a></li>
+
+  <li><a href="#">PY PoznaÒ</a></li>
+  <li><a href="#">PCH powiat chodzieski</a></li>
+  <li><a href="#">PCT powiat czarnkowsko-trzcianecki</a></li>
+  <li><a href="#">PGN powiat gnieünieÒski</a></li>
+  <li><a href="#">PGS powiat gostyÒski</a></li>
+  <li><a href="#">PGO powiat grodziski</a></li>
+  <li><a href="#">PJA powiat jarociÒski</a></li>
+  <li><a href="#">PKA powiat kaliski</a></li>
+  <li><a href="#">PKE powiat kÍpiÒski</a></li>
+  <li><a href="#">PKL powiat kolski</a></li>
+  <li><a href="#">PKN powiat koniÒski</a></li>
+  <li><a href="#">PKS powiat koúciaÒski</a></li>
+  <li><a href="#">PKR powiat krotoszyÒski</a></li>
+  <li><a href="#">PLE powiat leszczyÒski</a></li>
+  <li><a href="#">PMI powiat miÍdzychodzki</a></li>
+  <li><a href="#">PNT powiat nowotomyski</a></li>
+  <li><a href="#">POB powiat obornicki</a></li>
+  <li><a href="#">POS powiat ostrowski</a></li>
+  <li><a href="#">POT powiat ostrzeszowski</a></li>
+
+  <li><a href="#">PP powiat pilski</a></li>
+  <li><a href="#">PPL powiat pleszewski</a></li>
+
+  <li><a href="#">PZ powiat poznaÒski</a></li>
+  <li><a href="#">PRA powiat rawicki</a></li>
+  <li><a href="#">PSR powiat úredzki</a></li>
+  <li><a href="#">PSE powiat úremski</a></li>
+  <li><a href="#">PSZ powiat szamotulski</a></li>
+  <li><a href="#">PSL powiat s≥upecki</a></li>
+  <li><a href="#">PTU powiat turecki</a></li>
+  <li><a href="#">PWA powiat wπgrowiecki</a></li>
+  <li><a href="#">PWL powiat wolsztyÒski</a></li>
+  <li><a href="#">PWR powiat wrzesiÒski</a></li>
+  <li><a href="#">PZL powiat z≥otowski</a></li>
+  <li><b><a href="#">R podkarpackie</a></b></li>
+  <li><a href="#">RK Krosno</a></li>
+  <li><a href="#">RP Przemyúl</a></li>
+
+  <li><a href="#">RZ RzeszÛw</a></li>
+  <li><a href="#">RT Tarnobrzeg</a></li>
+
+  <li><a href="#">RBI powiat bieszczadzki</a></li>
+  <li><a href="#">RBR powiat brzozowski</a></li>
+  <li><a href="#">RDE powiat dÍbicki</a></li>
+  <li><a href="#">RJA powiat jaros≥awski</a></li>
+  <li><a href="#">RJS powiat jasielski</a></li>
+  <li><a href="#">RKL powiat kolbuszowski</a></li>
+  <li><a href="#">RKR powiat kroúnieÒski</a></li>
+  <li><a href="#">RLS powiat leski</a></li>
+  <li><a href="#">RLE powiat leøajski</a></li>
+  <li><a href="#">RLU powiat lubaczowski</a></li>
+  <li><a href="#">RMI powiat mielecki</a></li>
+  <li><a href="#">RNI powiat niøaÒski</a></li>
+  <li><a href="#">RPR powiat przemyski</a></li>
+  <li><a href="#">RPZ powiat przeworski</a></li>
+  <li><a href="#">RRS powiat ropczycko-sÍdziszowski</a></li>
+  <li><a href="#">RZE powiat rzeszowski</a></li>
+  <li><a href="#">RSA powiat sanocki</a></li>
+  <li><a href="#">RST powiat stalowowolski</a></li>
+  <li><a href="#">RSR powiat strzyøowski</a></li>
+  <li><a href="#">RTA powiat tarnobrzeski</a></li>
+  <li><a href="#">RLA powiat ≥aÒcucki</a></li>
+  <li><b><a href="#">S úlπskie</a></b></li>
+  <li><a href="#">SB Bielsko-Bia≥a</a></li>
+  <li><a href="#">SY Bytom</a></li>
+
+  <li><a href="#">SH ChorzÛw</a></li>
+  <li><a href="#">SC CzÍstochowa</a></li>
+
+  <li><a href="#">SD Dπbrowa GÛrnicza</a></li>
+  <li><a href="#">SG Gliwice</a></li>
+  <li><a href="#">SJZ JastrzÍbie-ZdrÛj</a></li>
+  <li><a href="#">SJ Jaworzno</a></li>
+  <li><a href="#">SK Katowice</a></li>
+  <li><a href="#">SM Mys≥owice</a></li>
+  <li><a href="#">SPI Piekary ålπskie</a></li>
+  <li><a href="#">SL Ruda ålπska</a></li>
+  <li><a href="#">SR Rybnik</a></li>
+  <li><a href="#">SI Siemianowice ålπskie</a></li>
+  <li><a href="#">SO Sosnowiec</a></li>
+  <li><a href="#">SW åwiÍtoch≥owice</a></li>
+  <li><a href="#">ST Tychy</a></li>
+  <li><a href="#">SZ Zabrze</a></li>
+  <li><a href="#">SZO Øory</a></li>
+  <li><a href="#">SBE powiat bÍdziÒski</a></li>
+  <li><a href="#">SBI powiat bielski</a></li>
+  <li><a href="#">SBL powiat bieruÒsko-lÍdziÒski</a></li>
+  <li><a href="#">SCI powiat cieszyÒski</a></li>
+
+  <li><a href="#">SCZ powiat czÍstochowski</a></li>
+  <li><a href="#">SGL powiat gliwicki</a></li>
+
+  <li><a href="#">SKL powiat k≥obucki</a></li>
+  <li><a href="#">SLU powiat lubliniecki</a></li>
+  <li><a href="#">SMI powiat miko≥owski</a></li>
+  <li><a href="#">SMY powiat myszkowski</a></li>
+  <li><a href="#">SPS powiat pszczyÒski</a></li>
+  <li><a href="#">SRC powiat raciborski</a></li>
+  <li><a href="#">SRB powiat rybnicki</a></li>
+  <li><a href="#">STA powiat tarnogÛrski</a></li>
+  <li><a href="#">SWD powiat wodzis≥awski</a></li>
+  <li><a href="#">SWZ powiat wodzis≥awski</a></li>
+  <li><a href="#">SZA powiat zawierciaÒski</a></li>
+  <li><a href="#">SZY powiat øywiecki</a></li>
+  <li><b><a href="#">T úwiÍtokrzyskie</a></b></li>
+  <li><a href="#">TK Kielce</a></li>
+  <li><a href="#">TBU powiat buski</a></li>
+
+  <li><a href="#">TJE powiat jÍdrzejowski</a></li>
+  <li><a href="#">TKA powiat kazimierski</a></li>
+
+  <li><a href="#">TKI powiat kielecki</a></li>
+  <li><a href="#">TKN powiat konecki</a></li>
+  <li><a href="#">TOP powiat opatowski</a></li>
+  <li><a href="#">TOS powiat ostrowiecki</a></li>
+  <li><a href="#">TPI powiat piÒczowski</a></li>
+  <li><a href="#">TSA powiat sandomierski</a></li>
+  <li><a href="#">TSK powiat skarøyski</a></li>
+  <li><a href="#">TST powiat starachowicki</a></li>
+  <li><a href="#">TSZ powiat staszowski</a></li>
+  <li><a href="#">TLW powiat w≥oszczowski</a></li>
+  <li><b><a href="#">W mazowieckie</a></b></li>
+  <li><a href="#">WO Ostro≥Íka</a></li>
+  <li><a href="#">WP P≥ock</a></li>
+
+  <li><a href="#">WR Radom</a></li>
+  <li><a href="#">WS Siedlce</a></li>
+
+  <li><a href="#">WB Warszawa Bemowo</a></li>
+  <li><a href="#">WA Warszawa Bia≥o≥Íka</a></li>
+  <li><a href="#">WD Warszawa Bielany</a></li>
+  <li><a href="#">WE Warszawa MokotÛw</a></li>
+  <li><a href="#">WU Warszawa Ochota</a></li>
+  <li><a href="#">WH Warszawa Praga PÛ≥noc</a></li>
+  <li><a href="#">WF Warszawa Praga Po≥udnie</a></li>
+  <li><a href="#">WW Warszawa RembertÛw, WilanÛw, W≥ochy</a></li>
+  <li><a href="#">WI Warszawa årÛdmieúcie</a></li>
+  <li><a href="#">WJ Warszawa TargÛwek</a></li>
+  <li><a href="#">WK Warszawa Ursus</a></li>
+  <li><a href="#">WN Warszawa UrsynÛw</a></li>
+  <li><a href="#">WT Warszawa Wawer</a></li>
+  <li><a href="#">WX Warszawa Weso≥a, Øoliborz</a></li>
+  <li><a href="#">WY Warszawa Wola</a></li>
+  <li><a href="#">WBR powiat bia≥obrzeski</a></li>
+  <li><a href="#">WCI powiat ciechanowski</a></li>
+  <li><a href="#">WG powiat garwoliÒski</a></li>
+  <li><a href="#">WGS powiat gostyniÒski</a></li>
+
+  <li><a href="#">WGM powiat grodziski</a></li>
+  <li><a href="#">WGR powiat grÛjecki</a></li>
+
+  <li><a href="#">WKZ powiat kozienicki</a></li>
+  <li><a href="#">WL powiat legionowski</a></li>
+  <li><a href="#">WLI powiat lipski</a></li>
+  <li><a href="#">WMA powiat makowski</a></li>
+  <li><a href="#">WM powiat miÒski</a></li>
+  <li><a href="#">WML powiat m≥awski</a></li>
+  <li><a href="#">WND powiat nowodworski</a></li>
+  <li><a href="#">WOR powiat ostrowski</a></li>
+  <li><a href="#">WOS powiat ostro≥Ícki</a></li>
+  <li><a href="#">WOT powiat otwocki</a></li>
+  <li><a href="#">WPI powiat piaseczyÒski</a></li>
+  <li><a href="#">WPR powiat pruszkowski</a></li>
+  <li><a href="#">WPP powiat pruszkowski</a></li>
+  <li><a href="#">WPS powiat pruszkowski</a></li>
+
+  <li><a href="#">WPZ powiat przasnyski</a></li>
+  <li><a href="#">WPY powiat przysuski</a></li>
+
+  <li><a href="#">WPU powiat pu≥tuski</a></li>
+  <li><a href="#">WPL powiat p≥ocki</a></li>
+  <li><a href="#">WPN powiat p≥oÒski</a></li>
+  <li><a href="#">WRA powiat radomski</a></li>
+  <li><a href="#">WSI powiat siedlecki</a></li>
+  <li><a href="#">WSE powiat sierpecki</a></li>
+  <li><a href="#">WSC powiat sochaczewski</a></li>
+  <li><a href="#">WSK powiat soko≥owski</a></li>
+  <li><a href="#">WSZ powiat szyd≥owiecki</a></li>
+  <li><a href="#">WZ powiat warszawski zachodni</a></li>
+  <li><a href="#">WWE powiat wÍgrowski</a></li>
+  <li><a href="#">WWL powiat wo≥omiÒski</a></li>
+  <li><a href="#">WV powiat wo≥omiÒski</a></li>
+  <li><a href="#">WWY powiat wyszkowski</a></li>
+  <li><a href="#">WZU powiat øuromiÒski</a></li>
+  <li><a href="#">WZW powiat zwoleÒski</a></li>
+  <li><a href="#">WZY powiat øyrardowski</a></li>
+  <li><a href="#">WLS powiat ≥osicki</a></li>
+  <li><b><a href="#">Z zachodniopomorskie</a></b></li>
+  <li><a href="#">ZK Koszalin</a></li>
+  <li><a href="#">ZSW åwinoujúcie</a></li>
+
+  <li><a href="#">ZS Szczecin</a></li>
+  <li><a href="#">ZZ Szczecin</a></li>
+
+  <li><a href="#">ZBI powiat bia≥ogardzki</a></li>
+  <li><a href="#">ZCH powiat choszczeÒski</a></li>
+  <li><a href="#">ZDR powiat drawski</a></li>
+  <li><a href="#">ZGL powiat goleniowski</a></li>
+  <li><a href="#">ZGY powiat gryficki</a></li>
+  <li><a href="#">ZGR powiat gryfiÒski</a></li>
+  <li><a href="#">ZKA powiat kamieÒski</a></li>
+  <li><a href="#">ZKO powiat koszaliÒski</a></li>
+  <li><a href="#">ZKL powiat ko≥obrzeski</a></li>
+  <li><a href="#">ZMY powiat myúliborski</a></li>
+  <li><a href="#">ZPL powiat policki</a></li>
+  <li><a href="#">ZPY powiat pyrzycki</a></li>
+  <li><a href="#">ZST powiat stargardzki</a></li>
+  <li><a href="#">ZSD powiat úwidwiÒski</a></li>
+  <li><a href="#">ZSZ powiat szczecinecki</a></li>
+  <li><a href="#">ZSL powiat s≥awieÒski</a></li>
+  <li><a href="#">ZWA powiat wa≥ecki</a></li>
+  <li><a href="#">ZLO powiat ≥obeski</a></li>
+
+</ul>
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+<a>èrÛd≥o: </a><a href="https://www.autocentrum.pl/porady/tablice-rejestracyjne/">https://www.autocentrum.pl/porady/tablice-rejestracyjne/</a>
+</body>
+</html>
+
+<style>
+	.strona {
+    	background-color: blue;
+		width: 50%;
+        color: white;
+		text-align: center;
+    }
